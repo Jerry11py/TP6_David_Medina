@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 4</title>
+    <link rel="stylesheet" href="pagina4.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Formulario de Mensaje</h1>
+        <form id="message-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="lastname">Apellido:</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="phone">Celular:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Enviar</button>
+            <button type="button" id="reset-button">Limpiar</button>
+        </form>
+
+        <div class="buttons">
+            <button onclick="navigateTo('pagina2.html')">Volver a Página 2</button>
+            <button onclick="navigateTo('pagina3.html')">Ir a Página 3</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="pagina4.js"></script>
+</body>
+</html>
